@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import UserCard from './components/UserCard';
+import TableNum from './components/TableNum';
+import Counter from './components/Counter';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <div>
+
+      <h1>Mi primera mini web con React 🚀</h1>
+
+      <UserCard name="Fran" age={23}></UserCard>
+
+      <TableNum 
+      email="fran@gmail.com" password="hola122" 
+      email1="oscar@gmail.com" password1="fsafa" 
+      email2="Carlos@gmail.com" password2="gggg" 
+      />
+
+      <Counter></Counter>
+
     </div>
   );
 }
