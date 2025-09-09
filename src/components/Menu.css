@@ -1,0 +1,29 @@
+nav {
+  display: flex;
+  align-items: center; /* centra verticalmente */
+  padding: 10px 20px;
+  background-color: #282c34;
+}
+
+.menu-logo {
+  height: 30px;
+  width: 50px;
+}
+
+.menu-links {
+  display: flex;
+  gap: 15px; /* espacio entre los links */
+  margin-left: auto; /* empuja los links a la derecha */
+}
+
+.menu-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.menu-links a:hover {
+  color: #61dafb;
+}

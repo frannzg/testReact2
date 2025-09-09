@@ -1,9 +1,17 @@
+import { Link } from "react-router-dom";
+import "./Menu.css"
+import logo from "../logo.svg";
+
 function Menu () {
     return (
-    <nav style={{ marginBottom: "20px" }}>
-      <a href="#inicio" style={{ marginRight: "10px" }}>Inicio</a>
-      <a href="#usuarios" style={{ marginRight: "10px" }}>Usuarios</a>
-      <a href="#contacto">Contacto</a>
+    <nav>
+      <img src={logo} alt="logo" className="menu-logo" />
+      
+      <div className="menu-links">
+        <Link to="/">Inicio</Link>
+        <Link to="/users">Usuarios</Link>
+        <Link to="/contact">Contacto</Link>
+      </div>
     </nav>
     );
 }
