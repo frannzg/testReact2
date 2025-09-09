@@ -17,6 +17,11 @@ const getUsers = async (req, res) => {
  */
 const createUser = async (req, res) => {
     const { name, email, password, age } = req.body;
+
+    if (!name || !email || !password || !age){
+        return res.status(400).json({ message: "Todos los campos son obligatorios" });
+    }
+
     try {
         const user = new User({ name, email, password, age });
         await user.save();
